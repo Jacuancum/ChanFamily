@@ -1,0 +1,22 @@
+.heroimage {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border: 1px solid;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid green;
+    margin: auto;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
