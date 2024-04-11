@@ -2,28 +2,6 @@
     width: 100%;
 }
 
-.navigation {
-    display: none;
-    flex-direction: row;
-    margin: auto;
-    border: 1px solid;
-}
-
-.navigation a {
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid;
-    margin: auto;
-    font-size: 17px;
-}
-
-.navigation a:hover {
-    color: rgb(89, 60, 255);
-    transition: .5s;
-    transform: scale(1.02);
-}
-
 .herotitle {
     font-size: 30px;
 }
@@ -35,6 +13,7 @@
     margin: 5px;
     font-size: 40px;
     text-shadow: 0 10px 10px rgb(114, 114, 114);
+    display: none;
 }
 
 body {
@@ -52,22 +31,21 @@ footer {
 /*---------------------------------------------*/
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
  
 #menu {
-    display: block;
     font-size: 1.5rem;
     border: 0;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: #000000;
+    background-color: #3718a7;
     color: white;
     position: absolute;
-    top: 40px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
+    align-content: center;
 }
  
 #menu::before {
@@ -76,6 +54,35 @@ footer {
  
 #menu.open::before {
     content: "X";
+}
+ 
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: auto;
+    width: 100%;
+}
+ 
+.navigation a {
+    display: none;
+    padding: .75rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 22px;
+    text-align: center;
+    align-self: center;/*垂直中置*/
+}
+ 
+.navigation a:hover {
+    color: #023300;
+    text-shadow: 0 0 10px lightgreen;
+}
+ 
+.open a {
+    display: block;
 }
 
 /*---------------------------------------------*/

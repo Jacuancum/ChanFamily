@@ -1,0 +1,13 @@
+@media screen and (min-width: 1000px) {
+    #menu {
+        display: none;
+    }
+  
+    .navigation {
+        flex-direction: row;
+        position: fixed;
+    }
+     .navigation a {
+        display: block;
+    }
+}
