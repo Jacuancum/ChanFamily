@@ -1,10 +1,9 @@
 .heroimage {
     width: 100%;
-    border-radius: 40px;
 }
 
 .navigation {
-    display: flex;
+    display: none;
     flex-direction: row;
     margin: auto;
     border: 1px solid;
@@ -32,6 +31,8 @@
 .herowelcome {
     position: absolute;
     top: 100px;
+    padding: 5px;
+    margin: 5px;
     font-size: 40px;
     text-shadow: 0 10px 10px rgb(114, 114, 114);
 }
@@ -47,3 +48,34 @@ main {
 footer {
     border: 1px solid;
 }
+
+/*---------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    border: 0;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #000000;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+ 
+#menu::before {
+    content: "☰";
+}
+ 
+#menu.open::before {
+    content: "X";
+}
+
+/*---------------------------------------------*/
