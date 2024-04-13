@@ -12,25 +12,47 @@
     <meta name="author" content="Jacob Chan">
     <meta property="og:title" content="Chan Family Home Page">
     <meta property="og:type" content="Website">
-    <meta property="og:image" content="https://jacuancum.github.io/">
-    <meta property="og:url" content="https://jacuancum.github.io/">
+    <meta property="og:image" content="https://jacuancum.github.io/ChanFamily/index.html">
+    <meta property="og:url" content="https://jacuancum.github.io/ChanFamily/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <h1 class="herotitle">The Chan Family</h1>
         <div id="menu"></div>
         <nav class="navigation">
-            <h1 class="herotitle">The Chan Family</h1>
             <a href="" title="Home">Home</a>
             <a href="" title="About">About</a>
             <a href="" title="Journey">Journey</a>
             <a href="" title="Shop">Shop</a>
-            <a href="" title="Contact">Contact</a>
+            <a href="" title="Contact">Contact Us</a>
         </nav>
-        <img class="heroimage" src="images/hkisland_south_view.JPG" alt="Hong Kong Island view">
+        <picture>
+            <source srcset="images/hkisland_south_view_large.webp" media="(min-width:1200px)">
+            <source srcset="images/hkisland_south_view_mid.webp" media="(min-width:800px)">
+            <img class="heroimage" src="images/hkisland_south_view.webp" alt="Hong Kong Island view">
+        </picture>
+        
         <h1 class="herowelcome">Welcome to our Website!</h1>
     </header>
     <main>main</main>
-    <footer>footer</footer>
+    <footer>
+        <div class="footer_info">
+            <h3>
+                The Chan Family
+            </h3>
+            <a href=""><img class="social_media_icon" src="images/whatsapp_icon.png" alt="whatsapp_icon" loading="lazy"></a>
+            <a href=""><img class="social_media_icon" src="images/facebook_icon.png" alt="facebook_icon" loading="lazy"></a>
+            <a href=""><img class="social_media_icon" src="images/instagram_icon.png" alt="instagram_icon" loading="lazy"></a>
+        </div>
+        <div class="footer_content">
+            <span>Copyright &copy;2024 |</span>
+            <span>The Chan Family |</span>
+            <span>Last Modification <span id="last_modified"></span></span>
+        </div>
+    </footer>
     <script src="scripts/hamburger.js"></script>
 </body>
 </html>

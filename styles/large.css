@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 650px) {
     #menu {
         display: none;
     }
@@ -6,8 +6,20 @@
     .navigation {
         flex-direction: row;
         position: fixed;
+        padding-right: 15px;
     }
+
      .navigation a {
         display: block;
+        background-color: rgb(86, 0, 156);
+    }
+
+    .open a {
+        position: relative;
+        top: 0;
+    }
+
+    #submenu {
+        display: none;
     }
 }

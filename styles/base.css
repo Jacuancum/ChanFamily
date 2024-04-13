@@ -3,7 +3,12 @@
 }
 
 .herotitle {
-    font-size: 30px;
+    font-size: 50px;
+    font-family: "Grey Qo", cursive;
+    position: fixed;
+    top: -20px;
+    left: 30px;
+    margin-bottom: 19px;
 }
 
 .herowelcome {
@@ -17,72 +22,127 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-main {
-    border: 1px solid;
+.subpage_body {
+    position: relative;
+    top: 90px;
 }
 
-footer {
-    border: 1px solid;
-}
-
-/*---------------------------------------------*/
+/*------------------------------hamburger------------------------------*/
 
 * {
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 #menu {
-    font-size: 1.5rem;
+    font-size: 19px;
     border: 0;
     text-decoration: none;
-    padding: .5rem .75rem;
+    padding: .4rem .7rem;
     background-color: #3718a7;
     color: white;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     align-content: center;
 }
- 
+
 #menu::before {
     content: "☰";
 }
- 
+
 #menu.open::before {
     content: "X";
 }
- 
+
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
     margin: auto;
     width: 100%;
-}
- 
-.navigation a {
-    display: none;
-    padding: .75rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: 22px;
-    text-align: center;
-    align-self: center;/*垂直中置*/
-}
- 
-.navigation a:hover {
-    color: #023300;
-    text-shadow: 0 0 10px lightgreen;
-}
- 
-.open a {
-    display: block;
+    top: 90px;
 }
 
-/*---------------------------------------------*/
+.navigation a {
+    display: none;
+    padding: .5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 19px;
+    text-align: center;
+    align-self: center;/*垂直中置*/
+    background-color: rgb(86, 0, 156);
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: #ffd900;
+    text-shadow: 0 0 20px rgb(255, 240, 104);
+}
+
+.open a {
+    display: block;
+    position: relative;
+    top: 90px;
+}
+
+#submenu {
+    font-size: 19px;
+    border: 0;
+    text-decoration: none;
+    padding: .4rem .7rem;
+    background-color: #3718a7;
+    color: white;
+    position: absolute;
+    top: -70px;
+    right: 20px;
+    align-content: center;
+}
+
+#submenu::before {
+    content: "☰";
+}
+
+#submenu.open::before {
+    content: "X";
+}
+
+/*------------------------------main------------------------------*/
+
+main {
+    border: 1px solid;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*------------------------------footer------------------------------*/
+
+footer {
+    border: 1px solid;
+    text-align: center;
+    background-color:rgb(86, 0, 156);
+    color: white;
+}
+
+footer h3 {
+    margin: 5px;
+}
+
+.footer_content {
+    text-wrap:balance;
+    margin: 5px;
+}
+
+.social_media_icon {
+    width: 30px;
+    margin: 5px;
+    align-self: center;
+}
+
