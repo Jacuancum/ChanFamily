@@ -22,4 +22,20 @@
     #submenu {
         display: none;
     }
+
+    .subnavigation {
+        flex-direction: row;
+        position: fixed;
+        padding-right: 15px;
+    }
+
+     .subnavigation a {
+        display: block;
+        background-color: rgb(86, 0, 156);
+    }
+
+    .open2 a {
+        position: relative;
+        top: 0;
+    }
 }

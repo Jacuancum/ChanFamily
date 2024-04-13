@@ -29,6 +29,7 @@ picture {
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     user-select: none;
+    min-width: 390px;
 }
 
 .subpage_body {
@@ -119,6 +120,38 @@ body {
     content: "X";
 }
 
+.subnavigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: auto;
+    width: 100%;
+    top: 90px;
+}
+
+.subnavigation a {
+    display: none;
+    padding: .5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 19px;
+    text-align: center;
+    align-self: center;/*垂直中置*/
+    background-color: rgb(86, 0, 156);
+    width: 100%;
+}
+
+.subnavigation a:hover {
+    color: #ffd900;
+    text-shadow: 0 0 20px rgb(255, 240, 104);
+}
+
+.open2 a {
+    display: block;
+}
+
 /*------------------------------main------------------------------*/
 
 main {
@@ -128,10 +161,67 @@ main {
     margin-bottom: 5px;
 }
 
-.card_photo {
-    width: 200px;
-    border-radius: 50%;
+.card_1 {
+    width: 100%;
+    max-width: 900px;
 }
+
+.about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card_1_photo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.card_2_photo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.card_3_photo {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.card_1_photo img, .card_2_photo img, .card_3_photo img, .card_4_photo img {
+    width: 200px;
+}
+
+.card_1_info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-content: center;
+}
+.card_2_info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-content: center;
+}
+.card_3_info {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-content: center;
+}
+
+.card_1_info p, .card_2_info p, .card_3_info p{
+    margin: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------footer------------------------------*/
 
