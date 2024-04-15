@@ -159,20 +159,25 @@ main {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
 }
 
 .main_grid {
     display: flex;
     gap: 5px;
-    justify-content: center;
 }
 
 .main_card {
-    border: 1px solid;
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 5px;
+    width: fit-content;
 }
 .main_card img {
-    width: 190px;
-    height: 200px;
+    width: 180px;
+    height: 190px;
     padding: 5px;
 }
 .main_card p {
