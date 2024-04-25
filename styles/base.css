@@ -169,6 +169,7 @@ main {
 
 .main_card {
     border: 1px solid;
+    padding-bottom: 10px;
 }
 .main_card img {
     width: 190px;
@@ -181,6 +182,10 @@ main {
 
 
 /*------------------------------about------------------------------*/
+
+.about_heroimage {
+    width: 900px;
+}
 
 .about_grid {
     display: grid;
@@ -273,12 +278,57 @@ main {
 }
 .shop_card img {
     width: 300px;
+    border: 15px solid black;
 }
 #paypal-container-CPJJLTW88647L {
     width: max-content;
     margin: auto;
 }
 
+/*------------------------------contact------------------------------*/
+.main_contact {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    margin-bottom: 50px;
+}
+
+.contact_info1 {
+    grid-column: 2/3;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact_info1 p {
+    font-size: 22px;
+}
+
+.form {
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    grid-column: 2/3;
+    font-size: 21px;
+    box-shadow: 1px 1px 10px;
+
+}
+
+input {
+    margin: 5px;
+    width: 250px;
+    height: 25px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+button {
+    font-size: 19px;
+    padding: 9px;
+    margin: 5px;
+}
 
 /*------------------------------footer------------------------------*/
 

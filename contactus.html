@@ -36,8 +36,26 @@
         </picture>
         <h1 class="herowelcome">Welcome to our Website!</h1>
     </header>
-    <main>
-        
+    <main class="main_contact">
+        <div class="contact_info1">
+            <p>Contact Us</p>
+            <p>Email: chanfamily@gmail.com</p>
+        </div>
+        <form class="form" action="/submit-comment" method="POST">
+            <label for="name" class="req">Name :</label>
+            <input name="name" id="name" type="text" required placeholder="Please enter your name" autocomplete="firstName"/><br>
+
+            <label for="email" class="req">Email :</label>
+            <input name="email" id="email" type="email" placeholder=""/><br>
+
+            <label for="PhoneNumber" class="req">Phone :</label>
+            <input name="PhoneNumber" id="PhoneNumber" type="telephone" placeholder=""/><br>
+
+            <label for="message" >Message :</label>
+            <textarea name="message" id="message"></textarea>
+
+            <br><button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
         <div class="footer_info">
@@ -56,5 +74,7 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/hamburger2.js"></script>
+    <script src="scripts/last modification.js"></script>
+    <script src="scripts/comment.js"></script>
 </body>
 </html>
